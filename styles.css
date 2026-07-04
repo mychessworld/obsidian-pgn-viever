@@ -131,6 +131,26 @@
   align-items: center !important;
 }
 
+.chess-pgn-fen-viewer-container .chess-pgn-game-header {
+  margin: 0 0 15px 0 !important;
+  padding: 0 8px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  font-size: clamp(
+    1.2em,
+    calc(var(--chess-plugin-size, 500) * 0.0384px),
+    1.92em
+  ) !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  color: var(--text-normal) !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  hyphens: auto !important;
+}
+
 /* Главный контейнер: увеличиваем область, чтобы координаты не обрезались */
 .chess-pgn-fen-viewer-container {
   display: flex !important;

@@ -1,7 +1,7 @@
 {
 	"id": "chess-pgn-fen-viewer",
 	"name": "Chess PGN-FEN Viewer",
-	"version": "1.1.9",
+	"version": "1.2.3",
 	"minAppVersion": "1.0.0",
 	"description": "Render interactive chess boards from PGN games and FEN positions with optional Stockfish analysis.",
 	"author": "Sergei Dolganov",

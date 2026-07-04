@@ -9,13 +9,13 @@ An [Obsidian](https://obsidian.md/) community plugin that renders interactive ch
 
 ## Features
 
-- **PGN code blocks** — full games with move list, navigation, and board controls
+- **PGN game header** — shows `White - Black, Result` above the board when PGN tags are present
 - **FEN code blocks** — single positions with a flip-board button
 - **Custom starting positions** — start a PGN from any FEN via tags or a `fen:` header line
 - **Stockfish analysis** (optional) — centipawn or mate score, depth, eval bar, and SAN variation line
 - **Live re-analysis** — click moves in the notation to analyze the current position
 - **Multi-board notes** — several boards on one page; analysis runs through a shared queue
-- **Configurable board size** — 200–1000 px in plugin settings
+- **Configurable board size** — 200–670 px in plugin settings
 - **Toggle analysis panel** — hide Stockfish entirely when you only need the board
 - **Desktop and mobile** — boards and Stockfish on Windows, macOS, Linux, iOS, and Android
 - **No extra setup** — Stockfish 18 is bundled inside `main.js`; no separate engine files or Node.js
@@ -67,9 +67,9 @@ Replace `main.js`, `styles.css`, and `manifest.json`, then reload Obsidian.
 ```
 ````
 
-### PGN — custom starting position
+Open the note in **Reading view** or **Live Preview**. If the PGN includes `[White]`, `[Black]`, and/or `[Result]` tags, a header such as **Alice - Bob, 1-0** appears 15 px above the board (about 20% larger than body text, scaled with board size).
 
-**Option A — standard PGN tags:**
+### PGN — custom starting position
 
 ````markdown
 ```pgn
